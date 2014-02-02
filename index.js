@@ -82,9 +82,8 @@ function DynRepl(ctx, opts) {
 		var content = null;
 		try {
 			content = require(file);
-		} catch(e) {
-			;
-		}
+		} catch(e) {}
+		
 		cb(content);
 		return self;
 	}

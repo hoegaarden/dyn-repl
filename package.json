@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "connect": "node ./client.js",
-    "test": "nodeunit test"
+    "test": "npm run hint && nodeunit test",
+    "hint": "PATH=$PATH:node_modules/jshint/bin jshint *.js example/*.js test/*.js"
   },
   "keywords": [
     "REPL",
@@ -16,7 +17,8 @@
   "author": "Hannes Hörl <hannes.hoerl+dynRepl@snowreporter.com>",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "nodeunit": "~0.8.4"
+    "nodeunit": "~0.8.4",
+    "jshint": "~2.4.3"
   },
   "repository": {
     "type": "git",

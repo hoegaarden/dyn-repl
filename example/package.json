@@ -1,7 +1,7 @@
 {
   "name": "DynReplExample",
   "config": {
-    "dynReplSocket": "/tmp/good_news_nobody1"
+    "dynReplSocket": "/tmp/good_news_everyone"
   },
   "dependencies": {
     "dyn-repl": "*"

@@ -1,3 +1,6 @@
+/* jshint multistr : true */
+
+"use strit";
 
 var DynRepl = require('..');
 var path = require('path');

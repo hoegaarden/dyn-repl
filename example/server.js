@@ -1,13 +1,15 @@
 "use strict";
 
-var DynRepl = require('dyn-repl');
+/* jshint camelcase : false */
+
+var dynRepl = require('dyn-repl');
 var http = require('http');
 var PORT = process.env.npm_package_config_port || 8080;
 
 
 var srv = http.createServer(function(req, res){
-	req.setHeader('Content-Type','text/plain');
-	req.end('Just some response!');
+	res.setHeader('Content-Type','text/plain');
+	res.end('Just some response!');
 });
 
 var sharedData = {
@@ -16,9 +18,9 @@ var sharedData = {
 var opts = {
 	verbose : true ,
 	// file : './package.json'
-}
+};
 
-var repl = DynRepl(sharedData, opts).start();
+var repl = dynRepl(sharedData, opts).start();
 
 srv.listen(PORT, function(){
 	console.log('server listening on port', PORT, 'yay!');

@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+/* jshint camelcase:false */
+
 // stolen from https://gist.github.com/jakwings/7772580
 
 "use strict";
