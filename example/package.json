@@ -1,0 +1,30 @@
+{
+  "name": "DynReplExample",
+  "config": {
+    "dynReplSocket": "/tmp/good_news_nobody1"
+  },
+  "dependencies": {
+    "dyn-repl": "*"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "repl": "DYN_REPL_SOCK=\"$npm_package_config_dynReplSocket\" npm run dyn-repl connect" ,
+    "some" : "echo $@"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

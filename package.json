@@ -1,0 +1,28 @@
+{
+  "name": "dyn-repl",
+  "version": "0.0.0",
+  "description": "dynamically start/stop a REPL inside your running process",
+  "main": "index.js",
+  "scripts": {
+    "connect": "node ./client.js",
+    "test": "nodeunit test"
+  },
+  "keywords": [
+    "REPL",
+    "dynamic",
+    "socket",
+    "debug"
+  ],
+  "author": "Hannes Hörl <hannes.hoerl+dynRepl@snowreporter.com>",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "nodeunit": "~0.8.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hoegaarden/dyn-repl.git"
+  },
+  "bugs": {
+    "url": "http://github.com/hoegaarden/dyn-repl/issues"
+  }
+}
